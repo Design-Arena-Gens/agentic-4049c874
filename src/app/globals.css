@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  color: #f8fafc;
+  background:
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.25), transparent 45%),
+    radial-gradient(circle at top right, rgba(22, 101, 216, 0.18), transparent 55%),
+    linear-gradient(180deg, #030712 0%, #0f172a 45%, #020617 100%);
+  font-feature-settings: "kern", "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  position: relative;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
